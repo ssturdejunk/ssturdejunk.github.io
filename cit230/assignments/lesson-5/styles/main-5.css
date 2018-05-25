@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+head title {
+    display: none;
+}
+
+body {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    background-color: #00BA34;
+    text-decoration-color: #073B3A;
+}
+
+header, nav, main, footer {
+    max-width: 600px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #0B6E4F;
+    text-decoration-color: #073B3A;
+
+}
+
+#title {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-style: normal;
+    font-variant: normal;
+}
+
+#motto {
+ text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-style: normal;
+    font-variant: normal;
+}
+
+header h1 {
+    font-size: 2.5rem
+}
+.headerimage {
+    float: left;
+}
+header p.motto {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #073B3A;
+    text-align: center;
+}
+nav button {
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    display: block;
+}
+nav ul li a {
+    display: block;
+    color: #DDB771;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: .9rem
+
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+main h2,main h3 {
+    position: relative;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+
+.weather-summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+.forecast{
+    display: none;
+
+}
+
+
+main article {
+    padding: .25rem;
+    border: solid red;
+}
+
+main article img {
+    width: 50%;
+    height: auto;
+    float:right;
+}
+
+footer {
+    clear: both;
+    margin: 2em;
+}
