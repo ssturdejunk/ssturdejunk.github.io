@@ -1,0 +1,45 @@
+@media only screen and (min-width: 37.5em) {
+
+    nav img.button {
+        display:none;
+    }
+
+   .forecast {
+        display: contents;
+        display: block;
+        clear: both;
+        padding-top: 5px;
+    }
+
+    header, nav, main, footer {
+        max-width: 1360px;
+        display: block;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    header h1 {
+        font-size: 2.5rem
+    }
+    .headerimage {
+        float: left;
+    }
+    header p.motto {
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+
+    table
+
+    main article img {
+        width: 70%;
+        float: right;
+        margin: 7px;
+        box-shadow: 3px 3px 3px #bbb;
+
+    }
+
+
+}

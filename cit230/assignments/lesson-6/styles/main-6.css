@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+head title {
+    display: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    color: #073B3A;
+}
+
+header, nav, main, footer {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+header {
+
+    padding: 10px;
+    background-color: #0B6E4F;
+    color: #DDB771;
+}
+
+.logo{
+    float: left;
+    position: relative;
+}
+
+.header-title {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.motto {
+ text-align: center;
+    max-width: 600px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Spectral SC', serif;
+    font-style: normal;
+    font-variant: normal;
+    padding:10px;
+}
+
+nav {
+    background-color: #073B3A;
+    text-align: center;
+}
+nav button {
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    display: block;
+}
+nav ul li a {
+    display: block;
+    color: #DDB771;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2em;
+
+}
+nav ul li a.active {
+    color: darkgoldenrod;
+    font-style: italic;
+}
+nav ul li a:hover {
+    color: darkgoldenrod;
+}
+
+main {}
+main h2,main h3 {
+    position: relative;
+    text-align: center;
+}
+
+.weather-summary h3{
+    padding-top: 0;
+}
+
+.weathersummarycontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.weathersummarycontent picture {
+   float: right;
+}
+
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 300px;
+}
+
+.tenday{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+.forecast{
+    display: none;
+
+}
+
+
+main article {
+    margin-left: auto;
+    margin-right: auto;
+    padding: .25rem;
+    max-width: 600px;
+}
+
+main article img {
+    max-width: 200px;
+    float:right;
+}
+
+footer {
+    clear: both;
+    background-color: #073B3A;
+    color: #DDB771;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+footer aside {
+    padding: .5rem;
+}
+
+footer a{
+    color: beige;
+}
+
+footer a:hover{
+    color: darkgoldenrod;
+}
+
+footer a:visited{
+    color:darkgoldenrod;
+}
