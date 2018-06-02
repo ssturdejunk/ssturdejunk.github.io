@@ -16,10 +16,6 @@
         display: block;
     }
 
-    nav ul li {
-        display: inline-block;
-    }
-
     header h1 {
         font-size: 2.5rem
     }
@@ -31,7 +27,6 @@
         font-size: 1.5rem;
     }
 
-    table
 
     main article img {
         width: 70%;

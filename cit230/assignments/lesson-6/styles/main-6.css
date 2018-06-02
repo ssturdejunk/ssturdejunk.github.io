@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
 }
-head title {
+head  {
     display: none;
 }
 
@@ -25,9 +25,12 @@ header {
     color: #DDB771;
 }
 
-.logo{
+header figure.logo{
     float: left;
     position: relative;
+    margin-top: 5%;
+    margin-bottom: auto;
+    margin-left: 5%
 }
 
 .header-title {
@@ -50,37 +53,41 @@ h1,h2,h3,h4,h5,h6 {
     padding:10px;
 }
 
+nav button {
+    color: #DDB771;
+    text-align: center;
+    font-size: 1.6em;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+}
+
 nav {
     background-color: #073B3A;
-    text-align: center;
 }
-nav button {
 
-}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
-nav ul li {
-    display: block;
+
+nav ul.hide{
+    display: none;
 }
+
 nav ul li a {
     display: block;
     color: #DDB771;
     text-align: center;
-    padding: 1rem;
+    padding: .8rem 2%;
     text-decoration: none;
-    font-size: 1.2em;
+    border-top: 1px solid
 
 }
 nav ul li a.active {
     color: darkgoldenrod;
     font-style: italic;
-}
-nav ul li a:hover {
-    color: darkgoldenrod;
 }
 
 main {}
@@ -138,8 +145,9 @@ main article {
 }
 
 main article img {
-    max-width: 200px;
+    max-width: 300px;
     float:right;
+    padding: 8px;
 }
 
 footer {
@@ -159,10 +167,11 @@ footer a{
     color: beige;
 }
 
-footer a:hover{
-    color: darkgoldenrod;
-}
+
 
 footer a:visited{
     color:darkgoldenrod;
+}
+footer a:hover{
+    color: #DDB771;
 }

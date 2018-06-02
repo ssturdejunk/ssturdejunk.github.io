@@ -5,21 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fair Weather Friends | Franklin Weather Page | Current Conditions | 10-Day Forecast</title>
-    <link rel="shortcut icon" href="images/fwf-logo-icon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <meta name="description" content="Helping our Franklin neighbors know whether the weather will work for their plans">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main-6.css">
     <link rel="stylesheet" href="styles/medium-6.css">
     <link rel="stylesheet" href="styles/large-6.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Spectral+SC" rel="stylesheet">
+    <script src="scripts/scripts.js"></script>
 </head>
 
 <body>
 
     <header>
-        <div class="logo">
-            <img src="images/fwf-logo-128.png" alt="Fair Weather Friends Logo Box Man">
-        </div>
+        <figure class="logo">
+            <img src="images/fwf-logo-125.png" alt="Fair Weather Friends Logo Box Man">
+        </figure>
         <div class="header-title">
             <h1>Fair Weather Friends</h1>
             <p class="motto">Helping our Franklin neighbors know whether the weather will work for their plans</p>
@@ -27,8 +28,8 @@
     </header>
 
     <nav>
-        <img class="button" src="images/menu-icon.png" alt="Mobile Menu Button">
-        <ul>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li><a href="#" class="active">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
@@ -50,9 +51,9 @@
             </div>
             <div class="current">
                 Sunny
-                <picture>
-                    <img src="images/sunny-73.png" alt="sunny weather icon with temp">
-                </picture>
+                <figure class="sunny-image">
+                    <img src="images/sunny-73.png" alt="sunny weather icon with temp" sizes="50vw" srcset="images/sunny-64.png 200w, images/sunny-73.png 400w">
+                </figure>
             </div>
             <div class="conditions">
                 <p>Precipitation: 20%</p>
@@ -94,12 +95,16 @@
                 </tbody>
             </table>
         </section>
-
         <article>
             <h3>Franklin Breaks Record</h3>
-                <img src="images/clouds-3353159_640.jpg" alt="clouds over the sun">
+                <figure>
+                    <img src="images/clouds-160.jpg" alt="clouds over the sun" sizes="40vw" srcset="images/clouds-160.jpg 150w, images/clouds-320.jpg 300w, images/clouds-640.jpg 600w">
+                </figure>
                 <p class="town-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum varius egestas. Praesent ultricies molestie sem, vitae iaculis elit rutrum ut. Donec pretium mi turpis, ut dictum ipsum congue ac. Ut viverra felis nibh, eu pharetra risus commodo tempor. Duis semper auctor quam sit amet condimentum. Sed a est et mi porta fermentum quis sit amet sem. Integer a ligula massa. Aenean nec porta mi, vitae dignissim ex. Mauris accumsan ante a nibh sagittis, vel ornare elit mattis. Curabitur quis ante id enim venenatis viverra id id tortor. Duis porta tempus nisi. Praesent ornare diam ac auctor condimentum. Curabitur finibus mi arcu, vel sodales odio dignissim a.</p>
-                    <br>
+                <figure>
+                    <img src="images/Originals/franklin-original.jpeg" alt="Picture of Franklin with sun over mountains" sizes="60vw" srcset="images/franklin-small.jpg 400w,images/franklin-medium.jpg 600w,images/franklin-large.jpg 800w">
+                </figure>
+                <br>
                 <p> Fusce tellus massa, efficitur et velit sed, mollis porta ex. Quisque malesuada sed erat eu dapibus. Aliquam sit amet sapien magna. Quisque placerat tellus orci, sit amet elementum velit dapibus laoreet. Nullam blandit lectus sollicitudin libero luctus, vitae aliquam erat bibendum. Mauris interdum, ipsum at gravida tristique, neque velit ultrices felis, id dictum orci leo ut orci. Cras cursus sed nibh at vestibulum. Morbi nulla orci, consequat id sapien vel, hendrerit suscipit metus. Duis non nibh ut tortor sodales lacinia non non sem. Duis auctor vehicula nulla, at vulputate tortor sagittis in. Nam dignissim ligula vel purus eleifend fermentum.</p>
         </article>
 
@@ -110,10 +115,10 @@
             Fair Weather Friends &verbar; c&sol;o Starr Struck Media Group &verbar; 1234 Water Lane &verbar; Austin, TX 78704 &verbar; 800-Starr-SMG &verbar;
             <a href="https://goo.gl/maps/Y1PCLqaifDE2">Google Map</a>
         </aside>
-        <aside class="footer-bar">&copy;2018 &verbar; All Rights Reserved &verbar; Site Title &verbar; <span id="currentdate">Current Date Placeholder</span>
+        <aside class="footer-bar">&copy;2018 &verbar; All Rights Reserved &verbar; Site Title &verbar; <span id="currentdate"></span>
         </aside>
     </footer>
-
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
 </body>
 
 </html>
