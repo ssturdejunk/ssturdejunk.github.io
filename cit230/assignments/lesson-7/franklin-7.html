@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fair Weather Friends | Franklin Weather Page | Current Conditions | 10-Day Forecast</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta name="description" content="Helping our Franklin neighbors know whether the weather will work for their plans">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Spectral+SC" rel="stylesheet">
+    <script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <figure class="logo">
+            <img src="images/fwf-logo-125.png" alt="Fair Weather Friends Logo Box Man">
+        </figure>
+        <div class="header-title">
+            <h1>Fair Weather Friends</h1>
+            <p class="motto">Helping our Franklin neighbors know whether the weather will work for their plans</p>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Franklin</h2>
+
+        <section class="weather-summary">
+            <h3>Weather Summary</h3>
+            <div class="weathersummarycontent">
+            <div class="highlow">
+                <p>High: <span id="high">83</span>&deg;F</p>
+                <p>Low: <span id="low">49</span>&deg;F</p>
+            </div>
+            <div class="current">
+                Sunny
+                <figure class="sunny-image">
+                    <img src="images/sunny-73.png" alt="sunny weather icon with temp" sizes="25vw" srcset="images/sunny-64.png 200w, images/sunny-73.png 400w">
+                </figure>
+            </div>
+            <div class="conditions">
+                <p>Precipitation: 20%</p>
+                <p>Wind Speed: &lt; <span id="windspeed">5</span> mph</p>
+                <p>Wind chill: <span id="windchill">7
+                    </span>&deg;F</p>
+
+            </div>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>Ten Day Forecast</h3>
+            <table class="tenday">
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article>
+            <h3>Franklin Breaks Record</h3>
+                <figure>
+                    <img src="images/clouds-160.jpg" alt="clouds over the sun" sizes="40vw" srcset="images/clouds-160.jpg 150w, images/clouds-320.jpg 300w, images/clouds-640.jpg 600w">
+                </figure>
+                <p class="town-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum varius egestas. Praesent ultricies molestie sem, vitae iaculis elit rutrum ut. Donec pretium mi turpis, ut dictum ipsum congue ac. Ut viverra felis nibh, eu pharetra risus commodo tempor. Duis semper auctor quam sit amet condimentum. Sed a est et mi porta fermentum quis sit amet sem. Integer a ligula massa. Aenean nec porta mi, vitae dignissim ex. Mauris accumsan ante a nibh sagittis, vel ornare elit mattis. Curabitur quis ante id enim venenatis viverra id id tortor. Duis porta tempus nisi. Praesent ornare diam ac auctor condimentum. Curabitur finibus mi arcu, vel sodales odio dignissim a.</p>
+                <br>
+                <p> Fusce tellus massa, efficitur et velit sed, mollis porta ex. Quisque malesuada sed erat eu dapibus. Aliquam sit amet sapien magna. Quisque placerat tellus orci, sit amet elementum velit dapibus laoreet. Nullam blandit lectus sollicitudin libero luctus, vitae aliquam erat bibendum. Mauris interdum, ipsum at gravida tristique, neque velit ultrices felis, id dictum orci leo ut orci. Cras cursus sed nibh at vestibulum. Morbi nulla orci, consequat id sapien vel, hendrerit suscipit metus. Duis non nibh ut tortor sodales lacinia non non sem. Duis auctor vehicula nulla, at vulputate tortor sagittis in. Nam dignissim ligula vel purus eleifend fermentum.</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside class="contact">
+            Fair Weather Friends &verbar; c&sol;o Starr Struck Media Group &verbar; 1234 Water Lane &verbar; Austin, TX 78704 &verbar; 800-Starr-SMG &verbar;
+            <a href="https://goo.gl/maps/Y1PCLqaifDE2">Google Map</a>
+        </aside>
+        <aside class="footer-bar">&copy;2018 &verbar; All Rights Reserved &verbar; Site Title &verbar; <span id="currentdate"></span>
+        </aside>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
