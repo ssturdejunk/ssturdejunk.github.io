@@ -149,6 +149,10 @@ main article img {
     text-align: center;
 }
 
+.image-gallery img{
+    max-width: 95%;
+}
+
 footer {
     clear: both;
     background-color: #073B3A;
