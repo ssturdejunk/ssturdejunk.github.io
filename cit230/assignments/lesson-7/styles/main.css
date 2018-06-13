@@ -147,10 +147,13 @@ main article img {
     align-content: center;
     column-gap: 10px;
     text-align: center;
+    font-size: 9px;
 }
 
 .image-gallery img{
     max-width: 95%;
+    overflow: hidden;
+
 }
 
 footer {
