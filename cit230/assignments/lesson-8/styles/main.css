@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    color: #073B3A;
+}
+
+header, nav, main, footer {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    padding: 10px;
+    background-color: #0B6E4F;
+    color: #DDB771;
+}
+
+header figure{
+    flex: 0 1 120px;
+    text-align: center;
+}
+
+.motto-mobile {
+    text-align: center;
+    max-width: 600px;
+}
+
+.motto-full {
+    display: none;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Spectral SC', serif;
+    font-style: normal;
+    font-variant: normal;
+    padding:10px;
+}
+
+nav button {
+    color: #DDB771;
+    text-align: center;
+    font-size: 1.6em;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+}
+
+nav {
+    background-color: #073B3A;
+}
+
+nav ul {
+    list-style: none;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul.hide{
+    display: none;
+}
+
+nav ul li{
+    height: auto;
+    border-top: 1px solid #DDB771;
+    align-items: center;
+    align-content:center;
+    padding: 6px;
+}
+
+@media only screen and (max-width: 37.5em){
+    nav ul li{
+        height: 32px;
+    }
+}
+
+nav ul li a {
+    color: #DDB771;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: whitesmoke;
+    font-style: italic;
+}
+
+nav ul li a:hover{
+    color: darkgoldenrod;
+}
+
+main {}
+main h2,main h3 {
+    position: relative;
+    text-align: center;
+}
+
+.weather-summary h3{
+    padding-top: 0;
+}
+
+.weathersummarycontent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+/*
+#high,#low,#windspeed {
+    color: red;
+}
+
+#windchill {
+    animation: blinker 1s linear infinite;
+    color: sandybrown;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+*/
+.forecast{
+    display: none;
+}
+
+
+main article {
+    margin-left: auto;
+    margin-right: auto;
+    padding: .25rem;
+    max-width: 600px;
+}
+
+main article img {
+    max-width: 300px;
+    float:right;
+    padding: 8px;
+}
+
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+    column-gap: 10px;
+    text-align: center;
+    font-size: 9px;
+}
+
+.image-gallery img{
+    max-width: 95%;
+    overflow: hidden;
+
+}
+
+footer {
+    clear: both;
+    background-color: #073B3A;
+    color: #DDB771;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+footer aside {
+    padding: .5rem;
+}
+
+footer a{
+    color: beige;
+}
+
+
+
+footer a:visited{
+    color:whitesmoke;
+}
+
+footer a:hover{
+    color: #DDB771;
+}
