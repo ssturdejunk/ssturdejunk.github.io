@@ -93,6 +93,10 @@ table, tr, tfoot,td, th {
     text-align: center;
 }
 
+table{
+    box-shadow: 5px 5px 10px #628ca6;
+}
+
 thead, tfoot{
     background-color:#7fb9c2;
 }
@@ -142,19 +146,6 @@ tbody tr:nth-child(6) td:first-child {
 .novgoal{
     background-color: #628ca6;
     color: white;
-}
-
-#color1{
-    background-color: #e7f0ed;
-}
-#color2{
-    background-color:#e7ffed;
-}
-#color3{
-    background-color:#628ca6;
-}
-#color4, thead, tfoot{
-    background-color:#7fb9c2;
 }
 
 
