@@ -11,5 +11,8 @@
     /* simple opacity */
     .opac {opacity: .5;}
 
+    form label.sbs {
+        padding: .4rem 0;
+    }
 
 }
