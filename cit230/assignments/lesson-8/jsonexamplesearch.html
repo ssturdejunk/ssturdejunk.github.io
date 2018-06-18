@@ -4,11 +4,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>JSON Example External File | Lesson 09 | CIT 230 Assignment Portal | Stephen Sturdevant | BYU-Idaho</title>
+        <title>JSON Example Web List | Lesson 09 | CIT 230 Assignment Portal | Stephen Sturdevant | BYU-Idaho</title>
         <meta name="description" content="Assignment 09 JSON student research video for Stephen Sturdevant in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/jsonexample.css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <script src="scripts/jsonexamplelist.js"></script>
     </head>
 
     <body>
@@ -19,10 +20,10 @@
             <ul id="primaryNav">
                 <li><a href="jsonstudentpresentation.html">JSON Presentation</a></li>
                 <li><a href="jsonexamplesimple.html">JSON Simple Example</a></li>
-                <li><a href="jsonexampleexternalfile.html" class="active">JSON Local External File Example</a></li>
+                <li><a href="jsonexampleexternalfile.html">JSON Local External File Example</a></li>
                 <li><a href="jsonexampleweb.html">JSON Web Example</a></li>
                 <li><a href="jsonexamplelist.html">JSON List</a></li>
-                <li><a href="jsonexamplesearch.html">JSON Search</a></li>
+                <li><a href="jsonexamplesearch.html"  class="active">JSON Search</a></li>
                 <li><a href="jsonexamplecreatevalues.html">JSON Create Page from Values</a></li>
             </ul>
         </nav>
@@ -32,6 +33,11 @@
                 <thead>
                     <tr>
                         <td colspan=3>Movie Info</td>
+                    </tr>
+                    <tr>
+                        <td colspan=3><label>Title Search <input type="text" id="searchString" onkeydown="if (event.keyCode == 13) { getSearchString(); return false;}"></label>
+                            <input type="button" id="search" value="Search" onclick=getSearchString()>
+                        </td>
                     </tr>
                     <tr>
                         <th>Attribute</th>
@@ -71,7 +77,8 @@
                 </tfoot>
             </table>
 
-            <script src="scripts/jsonexampleexternalfile.js"></script>   
+
+
         </main>
         <footer>
             <small>&copy; Copyright 2018, Stephen Sturdevant, Texas, USA <br>
