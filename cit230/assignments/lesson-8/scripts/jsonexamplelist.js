@@ -41,7 +41,6 @@ function buildElements(){
     var url ='http://ssturdejunk.github.io/cit230/assignments/lesson-8/scripts/elements.json';
     var data = JSON.parse(getjson(url));
     var elements = data.elements;
-    var
 
    for (var i = 0; i< elements.length; i++){
        createElement('h1', elements[i].name);
