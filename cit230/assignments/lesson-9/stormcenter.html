@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fair Weather Friends | Storm Center | Current Conditions | 10-Day Forecast</title>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <meta name="description" content="Helping our Franklin neighbors know whether the weather will work for their plans">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins%7CSpectral+SC" rel="stylesheet">
+        <script src="scripts/scripts.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <figure class="logo">
+                <img src="images/fwf-logo-125.png" alt="Fair Weather Friends Logo Box Man">
+            </figure>
+            <div class="header-title">
+                <h1>Fair Weather Friends</h1>
+                <p class="motto-full">Helping our Franklin neighbors know whether the weather will work for their plans</p>
+                <p class="motto-mobile">Weather help for Franklin</p>
+            </div>
+        </header>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#"class="active">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Report a Storm</h1>
+            <form method="get" action="thanx.html">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label class="top">Full Name*<input type="text" name="name" pattern="[a-zA-Z .]{5,50}" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="free2choose@gmail.com"></label>
+                    <label class="top">Phone number*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Zip code<input type="number" name="zip" placeholder="87536" pattern=".{5,5}" max="99999" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Data</legend>
+                    <label class="top">Date of Storm<input type="date" name="stormDate"></label>
+                    <label class="top">Storm type<input list="stormType" placeholder="Please Select">
+                        <datalist id="stormType">
+                            <option value="Blizzard">
+                            <option value="Blue Norther">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                    <label for="severity" class="top">Storm Severity (1 to 10)</label>
+                    <input type="range" id="severity" value="5" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                    <span id="severityvalue">5</span><br>
+                    <label class="top">Storm Region
+                        <select name="region">
+                            <option disabled selected value>Select Region... &#9662;</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+                    </label>
+                    <div>User in-Danger</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                    <textarea name="comments" rows="5" cols="70"></textarea>
+                </fieldset>
+                <input type="submit" value="Send My Report to the Storm Center" class="submitButton">
+
+
+            </form>
+
+        </main>
+
+        <footer>
+            <aside class="contact">
+                Fair Weather Friends &verbar; c&sol;o Starr Struck Media Group &verbar; 1234 Water Lane &verbar; Austin, TX 78704 &verbar; 800-Starr-SMG &verbar;
+                <a href="https://goo.gl/maps/Y1PCLqaifDE2">Google Map</a>
+            </aside>
+            <aside class="footer-bar">&copy;2018 &verbar; All Rights Reserved &verbar; Site Title &verbar; <span id="currentdate"></span>
+            </aside>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+
+</html>

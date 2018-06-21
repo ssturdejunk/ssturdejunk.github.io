@@ -1,0 +1,18 @@
+@media only screen and (min-width: 64em ) {
+
+
+    .image-gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    img:hover {box-shadow: 5px 5px 10px gray;}
+    /* rounded corners - boxmodel */
+    .rocorn {border-radius: 5px 50px;}
+    /* simple opacity */
+    .opac {opacity: .5;}
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+}

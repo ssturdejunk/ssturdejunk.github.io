@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fair Weather Friends | Gallery | Weather Images | Franklin Area Weather Pics</title>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <meta name="description" content="Franklin area weather gallery. Images of local, national, and world weather phenomena">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Spectral+SC" rel="stylesheet">
+        <script src="scripts/scripts.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <figure class="logo">
+                <img src="images/fwf-logo-125.png" alt="Fair Weather Friends Logo Box Man">
+            </figure>
+            <div class="header-title">
+                <h1>Fair Weather Friends</h1>
+                <p class="motto">Helping our Franklin neighbors know whether the weather will work for their plans</p>
+            </div>
+        </header>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="#" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Weather Gallery</h2>
+
+            <div class="image-gallery">
+                <figure class="aircraft">
+                    <img src="images/gallery/aircraft-400.jpg" alt="Airplane in the clouds" sizes="20vw" srcset="images/gallery/aircraft-400.jpg 20w, images/gallery/aircraft-600.jpg 40w, images/gallery/aircraft-1000.jpg 60w" longdesc="images/gallery/longdesc.txt">
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu odio hendrerit, pretium risus sed, tincidunt nisl.</figcaption>
+                </figure>
+                <figure class="frozen">
+                    <img src="images/gallery/frozen-400.jpg" alt="Frozen berry on tree" sizes="20vw" srcset="images/gallery/frozen-400.jpg 20w, images/gallery/frozen-600.jpg 40w, images/gallery/frozen-1000.jpg 60w" longdesc="images/gallery/longdesc.txt">
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu odio hendrerit, pretium risus sed, tincidunt nisl.</figcaption>
+                </figure>
+                <figure class="lightning">
+                    <img src="images/gallery/lightning-400.jpg" alt="Multiple lightning strikes in the night sky" sizes="20vw" srcset="images/gallery/lightning-400.jpg 20w, images/gallery/lightning-600.jpg 40w, images/gallery/lightning-1000.jpg 60w" longdesc="images/gallery/longdesc.txt">
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu odio hendrerit, pretium risus sed, tincidunt nisl.</figcaption>
+                </figure>
+                <figure class="monument-valley">
+                    <img src="images/gallery/monument-valley-400.jpg" alt="Lightning striking a peak in Monument Valley" sizes="20vw" srcset="images/gallery/monument-valley-400.jpg 20w, images/gallery/monument-valley-600.jpg 40w, images/gallery/monument-valley-1000.jpg 60w" longdesc="images/gallery/longdesc.txt">
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu odio hendrerit, pretium risus sed, tincidunt nisl.</figcaption>
+                </figure>
+                <figure class="mountain">
+                    <img src="images/gallery/mountain-400.jpg" alt="Low mist covering a mountain-side" sizes="20vw" srcset="images/gallery/mountain-400.jpg 20w, images/gallery/mountain-600.jpg 40w, images/gallery/mountain-1000.jpg 60w" longdesc="images/gallery/longdesc.txt">
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu odio hendrerit, pretium risus sed, tincidunt nisl.</figcaption>
+                </figure>
+                <figure class="thunderstorm">
+                    <img src="images/gallery/thunderstorm-400.jpg" alt="Thunderstorm with cloud lightning in the night sky over a body of water" sizes="20vw" srcset="images/gallery/thunderstorm-400.jpg 20w, images/gallery/thunderstorm-600.jpg 40w, images/gallery/thunderstorm-1000.jpg 60w" longdesc="images/gallery/longdesc.txt">
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu odio hendrerit, pretium risus sed, tincidunt nisl.</figcaption>
+                </figure>
+            </div>
+        </main>
+
+        <footer>
+            <aside class="contact">
+                Fair Weather Friends &verbar; c&sol;o Starr Struck Media Group &verbar; 1234 Water Lane &verbar; Austin, TX 78704 &verbar; 800-Starr-SMG &verbar;
+                <a href="https://goo.gl/maps/Y1PCLqaifDE2">Google Map</a>
+            </aside>
+            <aside class="footer-bar">&copy;2018 &verbar; All Rights Reserved &verbar; Site Title &verbar; <span id="currentdate"></span>
+            </aside>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+
+</html>
