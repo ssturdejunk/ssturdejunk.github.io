@@ -108,6 +108,10 @@ main h2,main h3 {
     text-align: center;
 }
 
+.weather-summary{
+    text-align: center
+}
+
 .weather-summary h3{
     padding-top: 0;
 }
