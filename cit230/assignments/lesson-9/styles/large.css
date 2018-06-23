@@ -1,5 +1,12 @@
 @media only screen and (min-width: 64em ) {
 
+    #towndata{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #towndata article {
+        min-width: 95%;
+    }
 
     .image-gallery{
         display: grid;

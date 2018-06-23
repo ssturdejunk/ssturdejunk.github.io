@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -160,6 +164,37 @@ main article img {
 
 }
 
+
+#towndata{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+    column-gap: 10px;
+    margin: 1em;
+}
+
+#towndata article {
+    border: 1px solid #073B3A;
+    min-width: 95%;
+    margin-bottom: 1em;
+}
+
+#towndata p {
+    margin: 5px 0;
+}
+
+#towndata ul {
+    margin-top: 0;
+}
+
+#towndata h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+}
+
+
+
 /*-----------  FORM --------------*/
 
 form fieldset {
@@ -214,11 +249,11 @@ form input.submitButton{
 }
 
 form label.top input:required {
-    border-left: red solid 6px; 
+    border-left: red solid 6px;
 }
 
 form label.top input:required:valid {
-    border-left: green solid 6px; 
+    border-left: green solid 6px;
 }
 
 /* from https://www.htmllion.com/html5-range-input-with-css.html*/
@@ -252,11 +287,11 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 
-input[type='range']::-webkit-slider-thumb:hover { 
+input[type='range']::-webkit-slider-thumb:hover {
     background: #DDB771;
 }
-input[type='range']:active::-webkit-slider-thumb { 
-    background: #DDB771; 
+input[type='range']:active::-webkit-slider-thumb {
+    background: #DDB771;
 }
 input[type='range']::-moz-range-track{
     -moz-appearance: none ;
@@ -267,7 +302,7 @@ input[type='range']::-moz-range-track{
     vertical-align:middle;
     margin:0; padding:0;
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
 }
 input[type='range']::-moz-range-thumb {
     -moz-appearance: none ;
@@ -281,11 +316,11 @@ input[type='range']::-moz-range-thumb {
     cursor: pointer;
     margin-top: -6px;
 }
-input[type='range']::-moz-range-thumb:hover { 
-    background: #DDB771; 
+input[type='range']::-moz-range-thumb:hover {
+    background: #DDB771;
 }
-input[type='range']:active::-moz-range-thumb { 
-    background: #DDB771; 
+input[type='range']:active::-moz-range-thumb {
+    background: #DDB771;
 }
 input[type=range]::-ms-track {
     width: 100%;
@@ -317,7 +352,7 @@ input[type=range]::-ms-thumb {
     border-radius: 100%;
     background: #0B6E4F;
     cursor: pointer;
-    margin-top: -2px;	
+    margin-top: -2px;
 }
 
 
@@ -328,6 +363,8 @@ footer {
     text-align: center;
     margin-left:auto;
     margin-right:auto;
+/*    flex-shrink: 0;*/
+
 }
 
 footer aside {

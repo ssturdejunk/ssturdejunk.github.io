@@ -94,6 +94,10 @@
         padding: 2%;
     }
 
+    #towndata article {
+        min-width: 500px;
+    }
+
 
     .image-gallery{
         display: grid;
