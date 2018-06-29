@@ -17,21 +17,13 @@
 
     <body>
 
-        <header>
-            <figure class="logo">
-                <img src="images/fwf-logo-125.png" alt="Fair Weather Friends Logo Box Man">
-            </figure>
-            <div class="header-title">
-                <h1>Fair Weather Friends</h1>
-                <p class="motto-full">Helping our Franklin neighbors know whether the weather will work for their plans</p>
-                <p class="motto-mobile">Weather help for the Tri-cities</p>
-            </div>
+        <header includefile="header.html">
         </header>
 
         <nav>
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="mainmenu" class="hide">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="franklin.html">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
                 <li><a href="#">Springfield</a></li>
@@ -43,6 +35,7 @@
             <h2>Top Story</h2>
             <article>
                 <h3>Franklin Breaks Record</h3>
+                <button onclick="wayfinding()"></button>
                 <figure>
                     <img src="images/clouds-160.jpg" alt="clouds over the sun" sizes="40vw" srcset="images/clouds-160.jpg 150w, images/clouds-320.jpg 300w, images/clouds-640.jpg 600w">
                 </figure>
@@ -55,16 +48,15 @@
 
         </main>
 
-        <footer>
-            <aside class="contact">
-                Fair Weather Friends &verbar; c&sol;o Starr Struck Media Group &verbar; 1234 Water Lane &verbar; Austin, TX 78704 &verbar; 800-Starr-SMG &verbar;
-                <a href="https://goo.gl/maps/Y1PCLqaifDE2">Google Map</a>
-            </aside>
-            <aside class="footer-bar">&copy;2018 &verbar; All Rights Reserved &verbar; Site Title &verbar; <span id="currentdate"></span>
-            </aside>
+        <footer includefile="footer.html">
         </footer>
+        <footer><span id="currentdate"></span>
+        </footer>
+
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/cityinfo.js"></script>
     </body>
+
     <script src="scripts/menu.js"></script>
+    <script src="scripts/wayfinding.js"></script>
 </html>

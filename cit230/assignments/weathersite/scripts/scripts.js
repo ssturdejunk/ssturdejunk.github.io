@@ -1,5 +1,5 @@
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide");
+    document.getElementById("mainmenu").classList.toggle("hide");
 }
 
 function adjustSeverity(severity) {
