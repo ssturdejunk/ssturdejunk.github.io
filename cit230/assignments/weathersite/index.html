@@ -31,11 +31,11 @@
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
+
         <main>
             <h2>Top Story</h2>
             <article>
                 <h3>Franklin Breaks Record</h3>
-                <button onclick="wayfinding()"></button>
                 <figure>
                     <img src="images/clouds-160.jpg" alt="clouds over the sun" sizes="40vw" srcset="images/clouds-160.jpg 150w, images/clouds-320.jpg 300w, images/clouds-640.jpg 600w">
                 </figure>
@@ -48,15 +48,22 @@
 
         </main>
 
-        <footer includefile="footer.html">
-        </footer>
-        <footer><span id="currentdate"></span>
+        <footer>
+            <aside class="contact">
+                Fair Weather Friends &verbar; c&sol;o Starr Struck Media Group &verbar; 1234 Water Lane &verbar; Austin, TX 78704 &verbar; 800-Starr-SMG &verbar;
+                <a href="https://goo.gl/maps/Y1PCLqaifDE2">Google Map</a>
+            </aside>
+
+            <aside>Weather data provided by <a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a> &copy; 2015-2018<br> Licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License</a>.
+            </aside>
+            <aside class="footer-bar">&copy;2018 &verbar; All Rights Reserved &verbar; Fair Weather Friends &verbar; <span id="currentdate"></span>
+            </aside>
         </footer>
 
+        <script src="scripts/wayfinding.js"></script>
         <script src="scripts/currentdate.js"></script>
+        <script src="scripts/include.js"></script>
         <script src="scripts/cityinfo.js"></script>
     </body>
 
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/wayfinding.js"></script>
 </html>

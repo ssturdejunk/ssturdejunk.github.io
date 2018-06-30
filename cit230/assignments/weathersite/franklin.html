@@ -17,15 +17,7 @@
 
 <body>
 
-    <header>
-        <figure class="logo">
-            <img src="images/fwf-logo-125.png" alt="Fair Weather Friends Logo Box Man">
-        </figure>
-        <div class="header-title">
-            <h1>Fair Weather Friends</h1>
-            <p class="motto-full">Helping our Franklin neighbors know whether the weather will work for their plans</p>
-            <p class="motto-mobile">Weather help for Franklin</p>
-        </div>
+    <header includefile="header.html">
     </header>
 
     <nav>
@@ -104,20 +96,22 @@
         </article>
 
     </main>
-
     <footer>
         <aside class="contact">
             Fair Weather Friends &verbar; c&sol;o Starr Struck Media Group &verbar; 1234 Water Lane &verbar; Austin, TX 78704 &verbar; 800-Starr-SMG &verbar;
             <a href="https://goo.gl/maps/Y1PCLqaifDE2">Google Map</a>
         </aside>
-        <aside class="footer-bar">&copy;2018 &verbar; All Rights Reserved &verbar; Site Title &verbar; <span id="currentdate"></span>
+
+        <aside>Weather data provided by <a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a> &copy; 2015-2018<br> Licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License</a>.
         </aside>
-        <aside>Data source <a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a> Copyright 2015-2018,  This data is provided and licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International License</a>.
+        <aside class="footer-bar">&copy;2018 &verbar; All Rights Reserved &verbar; Fair Weather Friends &verbar; <span id="currentdate"></span>
         </aside>
     </footer>
+
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/weather.js"></script>
-</body>
-    <script src="scripts/menu.js"></script>
+    <script src="scripts/include.js"></script>
     <script src="scripts/wayfinding.js"></script>
+</body>
+
 </html>

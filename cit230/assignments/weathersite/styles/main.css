@@ -94,7 +94,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a.active {
+nav ul li.active a {
     color: whitesmoke;
     font-style: italic;
 }
