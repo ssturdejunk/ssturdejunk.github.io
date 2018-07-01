@@ -1,4 +1,4 @@
-//function setCurrentDate(){
+
     var currentdate;
     var today = new Date();
     var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -16,4 +16,4 @@
 
     currentdate = wd + ", " + dd + ' ' + mm + ' ' + yyyy;
     document.getElementById("currentdate").innerHTML = currentdate;
-  //                       }
+
