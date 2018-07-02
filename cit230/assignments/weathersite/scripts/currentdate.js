@@ -5,7 +5,7 @@
     var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     var wd = weekday[today.getDay()];
     var dd = today.getDate();
-    var mm = month[today.getMonth() + 1]; //January is 0!
+    var mm = month[today.getMonth()]; //January is 0!
     var yyyy = today.getFullYear();
 
 
@@ -16,4 +16,3 @@
 
     currentdate = wd + ", " + dd + ' ' + mm + ' ' + yyyy;
     document.getElementById("currentdate").innerHTML = currentdate;
-
