@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke | Mountain Bikes | Bicycle Adventure Tours | Bike Parts | Bike Service</title>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <meta name="description" content="Riding the divide and helping you do the same">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald%7CRighteous" rel="stylesheet">
+        <script src="scripts/scripts.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <figure class="logo">
+                <img src="images/logo-colored-125.jpg" alt="The Mountain Spoke logo">
+            </figure>
+            <div class="header-title">
+                <h1>The Mountain Spoke</h1>
+                <p class="motto-full">Come Ride the Divide with Us</p>
+                <p class="motto-mobile">Ride the Divide!</p>
+            </div>
+        </header>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="mainmenu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adventure-tours.html" class="active">Adventure Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="HolyGrail-body">
+            <main class="HolyGrail-content">
+                <h2>Franklin</h2>
+
+                <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="weathersummarycontent">
+                        <div class="conditions">
+                            <p><span id="currenttemp"></span>&deg;F</p>
+                            <p><span id="currentcond"></span></p>
+                            <p>Wind Speed: &lt; <span id="windspeed"></span> mph</p>
+                        </div>
+                        <div class="highlow">
+                            <p>H <span id="hightemp"></span>&deg;F / L <span id="lowtemp"></span>&deg;F</p>
+                        </div>
+                        <div class="current">
+                            <p><span id="currenticon"></span></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="forecast">
+                    <h3>Ten Day Forecast</h3>
+                    <table class="tenday">
+                        <thead>
+                            <tr>
+                                <th>Day 1</th>
+                                <th>Day 2</th>
+                                <th>Day 3</th>
+                                <th>Day 4</th>
+                                <th>Day 5</th>
+                                <th>Day 6</th>
+                                <th>Day 7</th>
+                                <th>Day 8</th>
+                                <th>Day 9</th>
+                                <th>Day 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>H <span id="hightemp1"></span>&deg;F <br>L <span id="lowtemp1"></span>&deg;F<br><span id="icon1"></span></td>
+                                <td>H <span id="hightemp2"></span>&deg;F <br>L <span id="lowtemp2"></span>&deg;F<br><span id="icon2"></span></td>
+                                <td>H <span id="hightemp3"></span>&deg;F <br>L <span id="lowtemp3"></span>&deg;F<br><span id="icon3"></span></td>
+                                <td>H <span id="hightemp4"></span>&deg;F <br>L <span id="lowtemp4"></span>&deg;F<br><span id="icon4"></span></td>
+                                <td>H <span id="hightemp5"></span>&deg;F <br>L <span id="lowtemp5"></span>&deg;F<br><span id="icon5"></span></td>
+                                <td>H <span id="hightemp6">85</span>&deg;F <br>L <span id="lowtemp6">80</span>&deg;F<br><span id="icon6"></span></td>
+                                <td>H <span id="hightemp7">85</span>&deg;F <br>L <span id="lowtemp7">81</span>&deg;F<br><span id="icon7"></span></td>
+                                <td>H <span id="hightemp8">88</span>&deg;F <br>L <span id="lowtemp8">79</span>&deg;F<br><span id="icon8"></span></td>
+                                <td>H <span id="hightemp9">84</span>&deg;F <br>L <span id="lowtemp9">79</span>&deg;F<br><span id="icon9"></span></td>
+                                <td>H <span id="hightemp10">85</span>&deg;F <br>L <span id="lowtemp10">82</span>&deg;F<br><span id="icon10"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <article>
+                    <h3>Franklin Breaks Record</h3>
+                    <figure>
+                        <img src="images/clouds-160.jpg" alt="clouds over the sun" sizes="40vw" srcset="images/clouds-160.jpg 150w, images/clouds-320.jpg 300w, images/clouds-640.jpg 600w">
+                    </figure>
+                    <p class="town-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum varius egestas. Praesent ultricies molestie sem, vitae iaculis elit rutrum ut. Donec pretium mi turpis, ut dictum ipsum congue ac. Ut viverra felis nibh, eu pharetra risus commodo tempor. Duis semper auctor quam sit amet condimentum. Sed a est et mi porta fermentum quis sit amet sem. Integer a ligula massa. Aenean nec porta mi, vitae dignissim ex. Mauris accumsan ante a nibh sagittis, vel ornare elit mattis. Curabitur quis ante id enim venenatis viverra id id tortor. Duis porta tempus nisi. Praesent ornare diam ac auctor condimentum. Curabitur finibus mi arcu, vel sodales odio dignissim a.</p>
+                    <br>
+                    <p> Fusce tellus massa, efficitur et velit sed, mollis porta ex. Quisque malesuada sed erat eu dapibus. Aliquam sit amet sapien magna. Quisque placerat tellus orci, sit amet elementum velit dapibus laoreet. Nullam blandit lectus sollicitudin libero luctus, vitae aliquam erat bibendum. Mauris interdum, ipsum at gravida tristique, neque velit ultrices felis, id dictum orci leo ut orci. Cras cursus sed nibh at vestibulum. Morbi nulla orci, consequat id sapien vel, hendrerit suscipit metus. Duis non nibh ut tortor sodales lacinia non non sem. Duis auctor vehicula nulla, at vulputate tortor sagittis in. Nam dignissim ligula vel purus eleifend fermentum.</p>
+                </article>
+
+            </main>
+            <div class="HolyGrail-nav">
+                The event page should highlight the "Cycle the Continental Divide" annual event with information about the dates, route, costs, and basic requirements. Be sure to include a registration form on the page that collects information including the registrant's full name, email, phone, date of birth, home state or country, and special accommodations/comments.
+            </div>
+            <aside class="HolyGrail-ads">aside content </aside>
+        </div>
+        <footer includefile="footer.html">
+        </footer>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script>
+            weatherData("4156210");
+        </script>
+        <script src="scripts/include.js"></script>
+        <script src="scripts/wayfinding.js"></script>
+    </body>
+
+</html>
