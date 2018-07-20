@@ -12,6 +12,10 @@
 
 .HolyGrail-nav {
     order: -1;
+    padding:8px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
 }
 
 
@@ -149,6 +153,7 @@ main article, main p, main h1 {
     margin-right: auto;
     padding: .25rem;
     max-width: 600px;
+    text-align: justify;
 }
 
 main article img {
@@ -179,12 +184,17 @@ main article img {
     align-content: center;
     column-gap: 10px;
     margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
 }
 
 #towndata article {
     border: 1px solid #073B3A;
     min-width: 95%;
     margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #towndata p {
