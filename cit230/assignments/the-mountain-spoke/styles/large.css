@@ -11,7 +11,19 @@
         /* 12em is the width of the columns */
         flex: 0 0 12em;
     }
+    nav ul li.active, nav ul li.active a {
+        background-color: #29335c;
+        color:#fcac21;
+    }
 
+    nav ul li:hover a {
+        color: #fcac21;
+    }
+
+    nav ul li.active, nav ul li:hover {
+        background-color: #29335c;
+        color:#fcac21;
+    }
 
     #towndata article {
         min-width: 95%;
@@ -21,7 +33,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    main img:hover {box-shadow: 5px 5px 10px gray;}
+    article figure:hover {box-shadow: 5px 5px 10px brown;}
     /* rounded corners - boxmodel */
     .rocorn {border-radius: 5px 50px;}
     /* simple opacity */
@@ -31,4 +43,7 @@
         padding: .4rem 0;
     }
 
+
+
 }
+

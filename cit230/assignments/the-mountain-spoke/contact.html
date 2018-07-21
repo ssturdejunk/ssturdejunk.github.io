@@ -42,61 +42,29 @@
         <div class="HolyGrail-body">
             <main class="HolyGrail-content">
                 <br>
+                <h1>Where to Find Us</h1>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d5575.862514864535!2d-111.09509487359493!3d45.67228031332723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d45.6724527!2d-111.09069609999999!4m5!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!3m2!1d45.672272899999996!2d-111.0907175!5e0!3m2!1sen!2sus!4v1531953041109" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
             </main>
             <div class="HolyGrail-nav">
-
-                The contact page will contain essential contact information including an embedded Google map showing the company address at 3950 Valley Commons Drive Bozeman, MT and a basic contact us form.
+                <p>
+                We're here for all your mountain biking needs. <br>
+                    Come by the shop, call, or send us a note:
+                </p>
+                <br>
+                <p>Address:<br>
+                3950 Valley Commons Drive<br>
+                Bozeman, MT 59718
+                </p>
+                <br>
+                <p>
+                Phone Number:<br>
+                (406) 582-7330
+                </p>
             </div>
-            <aside class="HolyGrail-ads"><h1>Report a Storm</h1>
-                <form method="get" action="thanx.html">
-                    <fieldset>
-                        <legend>Contact Info</legend>
-                        <label class="top">Full Name*<input type="text" name="name" pattern="[a-zA-Z .]{5,50}" required></label>
-                        <label class="top">Email<input type="email" name="email" placeholder="free2choose@gmail.com"></label>
-                        <label class="top">Phone number*<input type="tel" name="phone" placeholder="1235551234" required></label>
-                        <label class="top">Zip code<input type="number" name="zip" placeholder="87536" max="99999" required></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Storm Data</legend>
-                        <label class="top">Date of Storm<input type="date" name="stormDate"></label>
-                        <label class="top">Storm type<input list="stormType" placeholder="Please Select">
-                            <datalist id="stormType">
-                                <option value="Blizzard">
-                                <option value="Blue Norther">
-                                <option value="Flash Flood">
-                                <option value="Hail">
-                                <option value="Hurricane">
-                                <option value="Thunderstorm">
-                                <option value="Tornado">
-                            </datalist>
-                        </label>
-                        <label for="severity" class="top">Storm Severity (1 to 10)</label>
-                        <input type="range" id="severity" value="5" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
-                        <span id="severityvalue">5</span><br>
-                        <label class="top">Storm Region
-                            <select name="region">
-                                <option disabled selected value>Select Region... &#9662;</option>
-                                <option value="franklin">Franklin</option>
-                                <option value="greenville">Greenville</option>
-                                <option value="springfield">Springfield</option>
-                            </select>
-                        </label>
-                        <div>User in-Danger</div>
-                        <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
-                        <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
-                        <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Additional Comments</legend>
-                        <textarea name="comments" rows="5" cols="70"></textarea>
-                    </fieldset>
-                    <input type="submit" value="Send My Report to the Storm Center" class="submitButton">
-
-
-                </form> </aside>
+            <aside class="HolyGrail-ads" includefile="contactform.html">
+                 </aside>
 
         </div>
 
