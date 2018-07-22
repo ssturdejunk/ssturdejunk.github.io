@@ -17,6 +17,9 @@
     margin-right: auto;
     text-align: center;
 }
+.HolyGrail-nav ul {
+    text-align: left;
+}
 
 .HolyGrail-ads {
     padding:8px;
@@ -144,7 +147,7 @@ main a, main a:visited {
     color:#fcac21
 }
 
-.weather-summary{
+.weadther-summary{
     text-align: center
 }
 
@@ -161,6 +164,12 @@ main a, main a:visited {
 main {
     background-color: #29335c;
 }
+.dividePic{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
 
 main article, main p, main h1 {
     margin-left: auto;
@@ -170,14 +179,29 @@ main article, main p, main h1 {
     text-align: justify;
 }
 
-main article img {
+main article ul{
+    list-style-position: inside;
+}
+
+.articleimageright {
     max-width: 300px;
     float:right;
     padding: 8px;
 }
 
-.HolyGrail-nav p{
+.articleimageleft {
+    max-width: 300px;
+    float:left;
+    padding: 8px;
+}
+
+.HolyGrail-nav p {
     padding: 12px;
+}
+
+.HolyGrail-body div ul {
+    margin: auto;
+    padding: auto;
 }
 
 iframe{
@@ -264,7 +288,7 @@ footer a{
 
 
 
-footer a:visited{
+footer a:visited, .HolyGrail-body a:visited {
     color: #db2b39;
 }
 

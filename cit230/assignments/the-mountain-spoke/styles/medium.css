@@ -80,22 +80,23 @@
         padding: 8px;
     }
 
-    main article img {
-        width: 70%;
-        float: right;
-        margin: 7px;
+    .articleimageright {
         box-shadow: 3px 3px 3px #fcac21;
     }
 
+    .articleimageleft {
+        box-shadow: -3px 3px 3px #fcac21;
+    }
+
     main article {
-        max-width: 900px;
+        max-width: 96%;
         margin-left:auto;
         margin-right:auto;
         padding: 2%;
     }
 
     #towndata article {
-        min-width: 500px;
+        min-width: 96%;
     }
 
 
