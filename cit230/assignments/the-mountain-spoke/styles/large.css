@@ -1,5 +1,23 @@
 @media only screen and (min-width: 64em ) {
 
+
+
+    .headerLeft, .headerRight{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .headerLeft{
+        float: left;
+    }
+
+
+    .headerRight{
+        float: right;
+    }
+
     .HolyGrail-body {
         flex-direction: row;
         flex: 1;

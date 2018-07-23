@@ -2,7 +2,12 @@
     box-sizing: border-box;
     margin: 0;
 }
-
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-variant: normal;
+    padding:10px;
+}
 
 .HolyGrail,
 .HolyGrail-body {
@@ -21,10 +26,14 @@
     text-align: left;
 }
 
-.HolyGrail-ads {
+.HolyGrail-ads, figcaption {
     padding:8px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+.tourDescription{
     text-align: center;
 }
 
@@ -34,8 +43,6 @@ html, body {
 
 body {
     font-family: 'Oswald', sans-serif;
-    font-style: normal;
-    font-variant: normal;
     color: #F0CEA0;
     background-color: #534D41;
 }
@@ -43,6 +50,10 @@ body {
 header, nav, footer, iframe {
     margin-left:auto;
     margin-right:auto;
+}
+
+.headerLeft, .headerRight{
+    display: none;
 }
 
 body header, body footer {
