@@ -57,7 +57,7 @@ header, nav, footer, iframe {
 }
 
 body header, body footer {
-    color:#29335C;
+    color:#29335C; /*blue*/
 }
 
 header, footer {
@@ -65,7 +65,7 @@ header, footer {
     align-items: center;
     flex-flow: row;
     padding: 10px;
-    background-color: #F0CEA0;
+    background-color: #F0CEA0; /*peach*/
 }
 
 header figure{
@@ -87,7 +87,7 @@ header figure{
     font-style: normal;
     font-variant: normal;
     padding:10px;
-    color: #fcac21;
+    color: #fcac21; /*yellow*/
 }
 
 nav button {
@@ -145,7 +145,7 @@ nav ul li:hover a {
 }
 
 nav ul li.active, nav ul li:hover {
-    background-color: #534D41;
+    background-color: #534D41;/*brown*/
     color:#F0CEA0;
 }
 
@@ -158,18 +158,15 @@ main a, main a:visited {
     color:#fcac21
 }
 
-.weadther-summary{
-    text-align: center
+.servicesList {
+   padding: 12px;
+    margin: 25px;
 }
 
-.weather-summary h3{
-    padding-top: 0;
-}
-
-.weathersummarycontent {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.servicesList, .servicesList td, .servicesList th {
+    border: 1px solid #fcac21;
+    border-collapse:collapse;
+    padding: 8px;
 }
 
 main {
@@ -180,6 +177,14 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding: 12px;
+}
+
+.shopImg{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    text-align: center;
 }
 
 main article, main p, main h1 {
@@ -282,6 +287,59 @@ form label.top input:required:valid {
 }
 
 /*-----------  END FORM --------------*/
+
+/*-------------sliding sales menu START_____
+
+#534D41;brown
+#fcac21; yellow
+#29335C; blue
+#F0CEA0; peach
+___________*/
+
+.modelClick {
+    color:#fcac21;
+}
+
+.catalog {
+    text-align: center;
+    padding: 1rem;
+}
+
+.slider, div > h4{
+    color: #29335C;
+    border-bottom: 2px solid #29335C;
+    padding: 1rem;
+}
+
+.sliderContent{
+    display: none;
+    background-color:  #fcac21;
+    color: #534D41;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sliderDesc{
+    text-align: center;
+    color: #29335C;
+}
+
+
+.slidePrice {
+    font-size: 2rem;
+}
+
+.slideSpecs{
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+
+
+/*------------sliding sales menu END------------------*/
+
+
 footer {
     clear: both;
     text-align: center;

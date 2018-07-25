@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="styles/large.css">
         <link href="https://fonts.googleapis.com/css?family=Oswald%7CRighteous" rel="stylesheet">
         <script src="scripts/scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/sliding-menu.js"></script>
     </head>
     <body>
 
@@ -48,33 +50,80 @@
         <div class="HolyGrail-body">
             <main class="HolyGrail-content">
                 <h2>We've got the bike for you!</h2>
-
-
-                <article>
                     <h3>Shop Bikes</h3>
-                    <figure>
-                        <img src="images/shop-small.jpg" alt="bike shop interior" sizes="40vw" srcset="images/shop-small.jpg 150w, images/shop-medium.jpg 300w, images/shop-large.jpg 600w" class="articleimageright">
-                    </figure>
-                    <p class="town-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum varius egestas. Praesent ultricies molestie sem, vitae iaculis elit rutrum ut. Donec pretium mi turpis, ut dictum ipsum congue ac. Ut viverra felis nibh, eu pharetra risus commodo tempor. Duis semper auctor quam sit amet condimentum. Sed a est et mi porta fermentum quis sit amet sem. Integer a ligula massa. Aenean nec porta mi, vitae dignissim ex. Mauris accumsan ante a nibh sagittis, vel ornare elit mattis. Curabitur quis ante id enim venenatis viverra id id tortor. Duis porta tempus nisi. Praesent ornare diam ac auctor condimentum. Curabitur finibus mi arcu, vel sodales odio dignissim a.</p>
+                <figure  class="shopImg">
+                    <img src="images/shop-small.jpg" alt="bike shop interior" sizes="40vw" srcset="images/shop-small.jpg 150w, images/shop-medium.jpg 300w, images/shop-large.jpg 600w"  class="shopImg">
+                    </figure><br>
+                    <figcaption>Visit our shop to test drive all the top models!</figcaption>
+                <br>
 
-                </article>
+                <div class="catalog">
+                    <h4 class="modelClick">Click a Model Image for Bike Specs</h4>
+                    <div class="slidingMenu">
+                        <figure class="slider">
+                            <img src="images/bike-cannondale-small.jpg" alt="Cannondale mountain bike outside" sizes="40vw" srcset="images/bike-cannondale-small.jpg 200w, images/bike-cannondale-medium.jpg 400w, images/bike-cannondale-large.jpg 600w">
+                        </figure>
+                        <div id="cannondale" class="sliderContent">
+                            <h4>Cannondale Scalpel-Si</h4>
+                            <h5 class="sliderDesc">Our PREMIUM Ride</h5>
+                            <ul class="sliderSpecs"><span class="sliderPrice">&#36;5,399.99</span><br>
+                                <li> Fork: Lefty 2.0 Alloy OPI, 2Spring, XLR, 100mm Travel</li>
+                                <li> Suspension: RockShox Monarch XX, 100mm Travel</li>
+                                <li> Brakes: Shimano XT Hydro Disc</li>
+                                <li> Frame: Scalpel-Si, BallisTec Carbon, Ai Offset</li>
+                                <li>Tires: Schwalbe Racing Ralph EVO Snakeskin,Tubeless Ready</li>
+                                <li>Rims: Stan's NoTubes Crest MK3</li>
+                            </ul>
+                        </div>
+
+
+                        <figure class="slider">
+                            <img src="images/bike-diamondback-small.jpg" alt="Diamondback mountain bike in front of garage door" sizes="40vw" srcset="images/bike-diamondback-small.jpg 200w, images/bike-diamondback-medium.jpg 400w, images/bike-diamondback-large.jpg 600w">
+                        </figure>
+                        <div id="diamondback" class="sliderContent">
+                            <h4>Diamondback Overdrive</h4>
+                            <h5 class="sliderDesc">For the Budget Conscious Rider</h5>
+                            <ul class="sliderSpecs"><span class="sliderPrice">&#36;1,399.99</span><br>
+                                <li> Fork: Rockshox Reba 120mm, Rebound, Lockout, Solo Air, 32mm Stanchion, 15mm thru axle, 1.5 Taper</li>
+                                <li> Suspension: Rockshox Reba 120mm</li>
+                                <li> Brakes: Shimano M447 Hydraulic Disc - 180/160mm Rotor</li>
+                                <li> Frame: Overdrive 27.5" Butted 6061-T6 Aluminum w/ Formed Top / Down Tube, machined headtube, forged drop outs w/replaceable hanger, disc only</li>
+                                <li>Tires: Kenda Honey Badger 27.5"x 2.2"</li>
+                                <li>Rims: DB SL-27 27.5" 32h Doublewall, Tubeless Compatible, 32mm outer width</li>
+                            </ul>
+                        </div>
+                        <figure class="slider">
+                            <img src="images/bike-rock-machine-small.jpg" alt="Rock Machine mountain bike outside" sizes="40vw" srcset="images/bike-rock-machine-small.jpg 200w, images/bike-rock-machine-medium.jpg 400w, images/bike-rock-machine-large.jpg 600w">
+                        </figure>
+                        <div id="rockMachine" class="sliderContent">
+                            <h4>Rock Machine</h4>
+                            <h5 class="sliderDesc">A Good Starter Bike</h5>
+                            <ul class="sliderSpecs"><span class="sliderPrice">&#36;999.99</span><br>
+                                <li> Fork: 	Marzocchi Dirt Jumper 2, 100mm, white</li>
+                                <li> Suspension: 	Marzocchi Dirt Jumper 2</li>
+                                <li> Brakes: Hayes Stroker Ryde, V7</li>
+                                <li> Frame: Block Design Custom 7005 DB</li>
+                                <li>Tires: KENDA Kinetics, 26×2.35″, 60 TPI</li>
+                                <li>Rims: Mach1 Magma, 32H, white</li>
+                            </ul>
+                        </div>
+                </div>
+                </div>
+
 
             </main>
             <div class="HolyGrail-nav">
-                <h3>Shop Local</h3>
-                <p>Visit our shop to test drive all the top models!</p>
+                <h3>Local legacy</h3>
+                <p>For nearly 30 years The Mountain Spoke has sold countless bikes and accessories to Bozeman native and visiting riders. But the most important thing we hope you leave our stores with is a love of cycling.<br>
+
+                    Sharing our cycling passion is a tradition that began with our founders when they bought a small bike shop on Valley Commons Drive in Downtown Bozeman. The little shop was one of only a handful of stores in Montana dedicated  to mountain bikes. What they lacked in business experience our founders made up for in sheer exuberance for riding.</p>
 
             </div>
-            <aside class="HolyGrail-ads">aside content </aside>
+            <aside class="HolyGrail-ads" includefile="contactform.html">
+            </aside>
         </div>
         <footer includefile="footer.html">
         </footer>
-
-        <script src="scripts/currentdate.js"></script>
-        <script src="scripts/weather.js"></script>
-        <script>
-            weatherData("4156210");
-        </script>
         <script src="scripts/include.js"></script>
         <script src="scripts/wayfinding.js"></script>
     </body>
