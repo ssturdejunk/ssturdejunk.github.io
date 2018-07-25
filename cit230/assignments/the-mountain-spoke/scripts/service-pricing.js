@@ -3,7 +3,7 @@ priceData()
 
 function priceData(){
     let priceRequest = new XMLHttpRequest();
-    let apiURL = "http://ssturdejunk.github.io/cit230/assignments/the-mountain-spoke/data/service-prices.json";
+    let apiURL = "https://ssturdejunk.github.io/cit230/assignments/the-mountain-spoke/data/service-prices.json";
 
     priceRequest.open("GET",apiURL,true);
     priceRequest.send();
@@ -12,13 +12,13 @@ function priceData(){
         //let priceData = JSON.parse(priceRequest);
         console.log(priceRequest);
 
-        for (var i = 0; i <= priceData.prices.length; i++){
+        for (var i = 0; i <= priceRequest.prices.length; i++){
 
             var num = i+1;
-            var count = i;
-            var priceID = "price"+num;
+            var priceID = "price"+num
+            console.log(priceID);
             try {
-                var price =priceData.prices.count;
+                var price =priceRequest.prices[i];
             }
             catch (err){console.log(err)};
 
