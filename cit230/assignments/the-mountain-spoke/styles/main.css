@@ -47,7 +47,7 @@ body {
     background-color: #534D41;
 }
 
-header, nav, footer, iframe {
+header, nav, footer {
     margin-left:auto;
     margin-right:auto;
 }
@@ -335,13 +335,15 @@ ___________*/
 
 /*------------sliding sales menu END------------------*/
 
-iframe {
+iframe, .siteOverviewVideo {
     width:600px;
     height:450px;
-    padding:8px;
+    padding:12px;
     max-width: 96%;
     border-collapse: collapse;
     border: 0px;
+    margin-left:auto;
+    margin-right:auto;
     }
 
 

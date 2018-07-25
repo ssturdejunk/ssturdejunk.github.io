@@ -1,9 +1,2 @@
-Link color in side bar
-
-Service page listing the repair services offered by the company using a data table format. from a JSON file under a data directory on your site.
-
-valid
-
-page weight does not exceed the 400k benchmark.
 
 Create a site overview video that provides a brief (~3-5 min), narrated overview of the site with references on how the site meets the specifications and is responsive. This video should be placed in a separate page using HTML5 video element and linked in the footer of your term website.
