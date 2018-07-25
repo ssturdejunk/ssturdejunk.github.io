@@ -154,8 +154,8 @@ main h2,main h3 {
     text-align: center;
 }
 
-main a, main a:visited {
-    color:#fcac21
+main a, main a:visited, .HolyGrail-nav a {
+    color:#fcac21;
 }
 
 .servicesList {
