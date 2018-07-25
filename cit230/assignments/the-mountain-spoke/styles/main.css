@@ -220,10 +220,7 @@ main article ul{
     padding: auto;
 }
 
-iframe{
-    padding:8px;
-    max-width: 96%;
-}
+
 
 /*-----------  FORM --------------*/
 
@@ -338,6 +335,15 @@ ___________*/
 
 
 /*------------sliding sales menu END------------------*/
+
+iframe {
+    width:600px;
+    height:450px;
+    padding:8px;
+    max-width: 96%;
+    border-collapse: collapse;
+    border: 0px;
+    }
 
 
 footer {
