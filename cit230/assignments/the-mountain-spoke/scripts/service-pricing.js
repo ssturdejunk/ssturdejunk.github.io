@@ -9,17 +9,14 @@ function priceData(){
     priceRequest.send();
 
     priceRequest.onload =  function dataParse() {
-        //var priceData = JSON.parse(priceRequest);
-        console.log(typeof(priceRequest));
-        console.log(priceRequest);
+        var priceInfo = JSON.parse(priceRequest.responseText);
 
         for (var i = 0; i <= 4; i++){
 
             var num = i+1;
             var priceID = "price"+num
-            console.log(priceID);
             try {
-                var price =JSON.parse(priceRequest).prices[i];
+                var price = priceInfo.prices[i];
             }
             catch (err){console.log(err)};
 
